@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>St Charles West High School Reunion</title>
+	<link rel="stylesheet" type="text/css" href="css\bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css\style.css">
+</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+					<img src="images\warriorlogo_large.jpg" id="logo">
+				</div>
+				<div class="col-xs-10">
+					<h1>St Charles West High School</h1>
+					<h1>Class of 1987</h1>
+					<h3>
+						<span>Event Info </span>|
+						<span><a href="registration.html">Register </a></span>|
+						<span><a href="blog.html">Blog </a></span>|
+						<!-- <span><a href="https://www.google.com/maps/dir/''/st+charles+west+high+school/@38.8011581,-90.6025711,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x87df28b71ad1ab85:0x9890c7a35bf28817!2m2!1d-90.5325311!2d38.801179" target="_blank">Location</a></span> -->
+						<span><a onclick="loadMap()">Location</a></span>
+					</h3>
+				</div>
+			</div>
+		</div>
+		<!-- PHOTO THUMBNAILS -->
+		<div class="container">
+			<div class="row">
+				<div class="qv rc sm sp row col-xs-2">
+			        <div class="qw">
+			          <!-- <h5 class="ald">Photos <small>· <a href="#">Edit</a></small></h5>  TIP: 2 elements in same tag. -->
+			          <h5 class="ald"><a href="photos.html">Photos</a></h5>
+			            <div data-grid="images" data-target-height="150">
+				          	<div style="margin-bottom: 10px; margin-right: 10px; display: inline-block; vertical-align: bottom;">
+				              <img data-width="640" data-height="320" data-action="zoom" src="https://placekitten.com/640/640" style="width: 117px; height: 118px;">
+					        </div>
+					        <div style="margin-bottom: 10px; margin-right: 0px; display: inline-block; vertical-align: bottom;">
+					          <img data-width="640" data-height="640" data-action="zoom" src="https://placekitten.com/640/640" style="width: 117px; height: 118px;">
+					        </div>
+					        <div style="margin-bottom: 10px; margin-right: 10px; display: inline-block; vertical-align: bottom;">
+					          <img data-width="640" data-height="640" data-action="zoom" src="https://placekitten.com/640/640" style="width: 117px; height: 118px;">
+					        </div>
+					        <div style="margin-bottom: 10px; margin-right: 0px; display: inline-block; vertical-align: bottom;">
+					          <img data-width="640" data-height="640" data-action="zoom" src="https://placekitten.com/640/640" style="width: 117px; height: 118px;">
+					        </div>
+					        <div style="margin-bottom: 10px; margin-right: 10px; display: inline-block; vertical-align: bottom;">
+					          <img data-width="640" data-height="640" data-action="zoom" src="https://placekitten.com/640/640" style="width: 117px; height: 118px;">
+					        </div>	
+					        <div style="margin-bottom: 10px; margin-right: 0px; display: inline-block; vertical-align: bottom;">
+					          <img data-width="640" data-height="640" data-action="zoom" src="https://placekitten.com/640/640" style="width: 117px; height: 118px;">
+					        </div>
+				        </div>
+			        </div>
+			    </div>
+			    <div class="col-xs-3"></div>
+				<div class="col-xs-7" id="map_location">
+				<!-- Map gets appended here -->
+				</div>			
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js\bootstrap.min.js"></script>
+		<script src="js\bootstrap.js"></script>
+		<script src="js\npm.js"></script>
+		<script src="js\script.js"></script>
+		<script src="js\data.js"></script>
+		<script src="js\data.json"></script>
+	</body>
+</html>
