@@ -1,0 +1,1 @@
+This append version replaces seperate html links with html strings that are appended to the index.html page by js functions.

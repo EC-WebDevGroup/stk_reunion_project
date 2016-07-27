@@ -1,0 +1,62 @@
+body 
+{
+	background-color: #5d0303;
+}
+
+a
+{
+	color: white;
+}
+
+h1, h3, h4, h5
+{
+	color: white;
+	text-align: center;
+}
+
+#body-div
+{
+	align-content: center;
+}
+
+#logo
+{
+	border: 1px solid black;
+	margin-top: 1em;
+}
+
+#home
+{
+	padding-left: 15%;
+}
+
+#reg_blog_form
+{
+	padding-left: 15%;
+}
+
+#input-field
+{
+	align-content: center;
+}
+
+@media screen and (max-width: 768px)
+	{
+		h1
+		{
+			font-size: 1.8em;
+		}
+
+		h3
+		{
+			font-size: 0.9em;
+		}
+	
+	/*#logo
+		{
+			height: 100%;
+			width: 65px;
+			border: 1px solid black;
+		}*/
+	}
+
