@@ -1,5 +1,6 @@
 body 
 {
+	color: white;
 	background-color: #5d0303;
 }
 
@@ -8,15 +9,14 @@ a
 	color: white;
 }
 
-h1, h3, h4, h5
+h1, h3, h5
 {
-	color: white;
 	text-align: center;
 }
 
-#body-div
+h4
 {
-	align-content: center;
+	color: white;
 }
 
 #logo
@@ -35,11 +35,14 @@ h1, h3, h4, h5
 	padding-left: 15%;
 }
 
-#input-field
+.buttons
 {
-	align-content: center;
+	color: black;
 }
-
+ #blog_text
+ {
+ 	color: black;
+ }
 @media screen and (max-width: 768px)
 	{
 		h1
