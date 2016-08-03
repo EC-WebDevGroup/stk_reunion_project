@@ -1,0 +1,65 @@
+body 
+{
+	color: white;
+	background-color: #5d0303;
+}
+
+a
+{
+	color: white;
+}
+
+h1, h3, h5
+{
+	text-align: center;
+}
+
+h4
+{
+	color: white;
+}
+
+#logo
+{
+	border: 1px solid black;
+	margin-top: 1em;
+}
+
+#home
+{
+	padding-left: 15%;
+}
+
+#reg_blog_form
+{
+	padding-left: 15%;
+}
+
+.buttons
+{
+	color: black;
+}
+ #blog_text
+ {
+ 	color: black;
+ }
+@media screen and (max-width: 768px)
+	{
+		h1
+		{
+			font-size: 1.8em;
+		}
+
+		h3
+		{
+			font-size: 0.9em;
+		}
+	
+	/*#logo
+		{
+			height: 100%;
+			width: 65px;
+			border: 1px solid black;
+		}*/
+	}
+
