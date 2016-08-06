@@ -1,12 +1,12 @@
 
 var graduates = {"grads":
 	[
-		{"first_name": "Matt", "last_name": "Smith", "email": "ms@gmail.com"},
-		{"first_name": "Scott", "last_name": "Jochim", "email": "scott.jochim@att.net"}
+		{"first_name": "Matt", "last_name": "Smith", "email": "ms@gmail.com", "password": "qwe123"},
+		{"first_name": "Scott", "last_name": "Jochim", "email": "scott.jochim@att.net", "password": "asd123"}
 	]
 }
 
-var blogposts = {"blogs":
+var messageboard = {"messages":
 	[
 		{"name": "Matt Smith", "date": "7/7/16", "post": "'Post @ index 0'"},
 		{"name": "Scott Jochim", "date": "7/31/16", "post": "'Post @ index 1'"}
