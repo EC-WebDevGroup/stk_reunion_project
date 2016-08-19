@@ -20,3 +20,7 @@ Deleted loadMap().
 Added 'Cancel' button to message post.
 
 There is still no validation of Regsitration fields beyond the requirement that they not be empty.  Photos page could use some work.  Needs sponsors.  Tim is looking into adding Facebook logo/link.  Whole page could probably be improved regarding layout(some centering issues) and responsiveness.  There is no logout funtion.  No hamburger button, no maiden name or nickname. 
+
+
+8/18
+Made links larger on small screen.  moved column definitions for append area from index.html to append functions. Cleaned up append strings for readibility.  
