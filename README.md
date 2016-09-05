@@ -23,4 +23,23 @@ There is still no validation of Regsitration fields beyond the requirement that 
 
 
 8/18
-Made links larger on small screen.  moved column definitions for append area from index.html to append functions. Cleaned up append strings for readibility.  
+Made links larger on small screen.  moved column definitions for append area from index.html to append functions. Cleaned up append strings for readibility.  Still needs more complete meta tags.
+
+8/30
+Created 'if' statement for message creation for 'no text' condition.  Added facebook link from Nancy.  Validated index.html, script.js and style.css, and noted any remaining errors. Still not sure how to best implement sponsors and attendees.  Still need meta-data.
+
+8/31
+fixed problem with textbox for new messages.  was not centered; needed bootstrap columns.  Changed columns for logo to 4/4/4, to make smaller, so it will show more completely.
+
+9/1
+Added 'use-strict'.  I broke showMessages().  Fixed it by declaring 'var i' instead of 'i' in the 'for' loop.
+
+9/2
+Made photos 200x200px.
+
+9/4
+Added 'collapse' to menu and side columns.  Used function from 'http://stackoverflow.com/questions/18767789/how-to-automatically-collapse-panel-on-small-device-in-bootstrap' to cause collapse with small screen-size.
+
+9/5
+All small-screen nav is now on menu button that appears @ 676px or less.  Added removeHeading() to clear screen completely before appending, and showSponsors() to append what is normally in sidebar.  Facebook link does href to new tab.
+Remaining: How to finally handle sponsors and attendess; server-side functions for registration, login, displaying and creating messages.

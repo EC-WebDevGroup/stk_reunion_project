@@ -1,8 +1,8 @@
 
 var graduates = {"grads":
 	[
-		{"first_name": "Matt", "last_name": "Smith", "email": "ms@gmail.com", "password": "qwe123"},
-		{"first_name": "Scott", "last_name": "Jochim", "email": "scott.jochim@att.net", "password": "asd123"}
+		{"first_name": "Matt", "last_name": "Smith", "email": "ms@gmail.com", "password": "123"},
+		{"first_name": "Scott", "last_name": "Jochim", "email": "scott.jochim@att.net", "password": "123"}
 	]
 }
 
