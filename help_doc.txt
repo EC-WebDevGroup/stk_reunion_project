@@ -1,0 +1,21 @@
+HELP DOC
+*** All changes to files must be saved to take effect.
+
+To add photos:
+Store photos in images/photos.  
+In 'data.js', add new object to 'photo' using this format:
+{"file": "<filename>"}.  Make sure that each object has a comma after closing curly-brace.  Only the last object doesnt need comma.
+To change photo dimensions find 'var HTMLphoto' near the top of script.js.  near the end of 'var HTMLphoto' find 'style="width: 200px; height: 200px;">' and modify width and height.
+
+To add supporters:
+In index.html, add this tag where indcated (between line 51 and line 69):
+
+<a href="url goes here" target="_blank">
+    <div class="business_card">
+         text goes here
+    </div>
+</a>
+
+To modify event info:
+In script.js, find 'function loadInfo()' @ line 78.  Modify the text between the <h3></h3> tags (starting @ line 85), or add additional <h3></h3> tags, direclty above or below the existing tags.  <br> after each will make space between the lines.
+

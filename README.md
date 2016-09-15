@@ -42,4 +42,15 @@ Added 'collapse' to menu and side columns.  Used function from 'http://stackover
 
 9/5
 All small-screen nav is now on menu button that appears @ 676px or less.  Added removeHeading() to clear screen completely before appending, and showSponsors() to append what is normally in sidebar.  Facebook link does href to new tab.
-Remaining: How to finally handle sponsors and attendess; server-side functions for registration, login, displaying and creating messages.
+
+9/8
+removed 'collapse' except for navbar button dropdown menu.  now that sidebars are below main content, no need for 'collapse'.  menu and navbar controlled by css media queries.  set breakpoint to 768px to match bootstrap.  Modified register and login fields.  Re-wrote loadPhotos() so that that they are pulled from array.
+
+9/14
+Added some meta tags.  Added cookies to prevent logout on refesh.  Does not work on chrome and opera.
+
+Remaining:
+1. collapse menues when clicked off of them.
+2. photos and messages on same page.(bailing on this for now)
+3. Make it easy for Matt to:
+   add photos, add sponsors, modify info.
