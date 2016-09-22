@@ -49,8 +49,14 @@ removed 'collapse' except for navbar button dropdown menu.  now that sidebars ar
 9/14
 Added some meta tags.  Added cookies to prevent logout on refesh.  Does not work on chrome and opera.
 
+9/17
+Added if statment to postMessage() to consider diff browsers.
+if there is a cookie name of person posting message will be name in the cookie.  If there is no cookie name will be current user which would be same value.  IE needs to use the cookie for the name current user gets cleared on 2nd refresh and messages are posted w/o name.  Chrome will not allow local cookies so needs currentuser for the name.  Might be best to have session controlled by server instead of local cookies.
+
 Remaining:
 1. collapse menues when clicked off of them.
 2. photos and messages on same page.(bailing on this for now)
-3. Make it easy for Matt to:
-   add photos, add sponsors, modify info.
+
+
+bugs
+If heading has been removed by naviation on small screen it does not re-appear when screen is made large again.

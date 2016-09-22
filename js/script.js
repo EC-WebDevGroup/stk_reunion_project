@@ -4,8 +4,6 @@
 "use strict";
 
 var currentuser = "";//Used for posting messages.
-var HTMLphoto = '<div style="margin-bottom: 10px; margin-right: 10px; display: inline-block; vertical-align: bottom;">'+
-'<img data-width="640" data-height="640" data-action="zoom" src="images/photos/%data%" style="width: 200px; height: 200px;"></div>';
 
 //'Load' functions append html to the designated divs.
 //Each 'load' function removes the current html before appending its own html.
@@ -109,6 +107,9 @@ function loadInfo()
 
 function loadPhotos()
 {
+    var HTMLphoto = '<div style="margin-bottom: 10px; margin-right: 10px; display: inline-block; vertical-align: bottom;">'+
+    '<img data-width="640" data-height="640" data-action="zoom" src="images/photos/%data%" style="width: 200px; height: 200px;"></div>';
+
     $("#append-location").empty();
     $("#append-location").append(
     '<div class="container">'+
@@ -258,7 +259,7 @@ function allowUser()//Executes from Login on messages page
                 loadHomeNavbar();
                 loadLogo();
                 showHeading();
-                // makeCookie();
+                makeCookie();
                 alert("You will be logged out when this window is closed.");
                 return acct, currentuser;
             }
@@ -274,28 +275,26 @@ function allowUser()//Executes from Login on messages page
 //Cookies coded @ body tag in index.html, allowUser() in script.js and here.
 //Remove if not used in final version.  Cookies work in IE and Firefox but 
 //not in Chrome because it does not accept local cookies.
-// function makeCookie()
-// {
-//     document.cookie = "user="+currentuser;
+function makeCookie()
+{
+    document.cookie = "user="+currentuser;
+}
 
-//     alert("cookie is "+document.cookie);
-// }
+function getCookie()
+{
+    var c = document.cookie;
+    if(c != "")
+    {
+        loadHomeMenu();
+        loadHomeNavbar();
+    }
 
-// function getCookie()
-// {
-//     var c = document.cookie;
-//     if(c != "")
-//     {
-//         loadHomeMenu();
-//         loadHomeNavbar();
-//     }
-
-//     else
-//     {
-//         loadLoginMenu();
-//         loadLoginNavbar();
-//     }
-// }
+    else
+    {
+        loadLoginMenu();
+        loadLoginNavbar();
+    }
+}
 
 function createNewMessage()//Creates textarea for new submission.
 {
@@ -321,6 +320,21 @@ function createNewMessage()//Creates textarea for new submission.
 
 function postMessage()//Runs when new message is posted.
     {
+        //if statement to compensate for diff between Chrome and IE.
+        //IE loses currentuser after second refresh so posts messages
+        //w/o names.  Chrome wont accept local cookies so needs currentuser
+        //to post names with messages.
+        var c = document.cookie;
+        if (c.length > 5)
+        {
+            var start = c.indexOf("user=") + 5;
+            var end = c.length;
+            var username = c.substring(start, end);
+        }
+        else
+        {
+            var username = currentuser;
+        }
         //if there is no text, show an alert and reload the messages.
         if (document.forms["post_message"].elements["message"].value=='')
         {
@@ -335,7 +349,7 @@ function postMessage()//Runs when new message is posted.
             var month = date.getMonth() + 1;
             var day = date.getDate();
             var year = date.getFullYear();
-            messageboard.messages.push({"name": currentuser, "date": month + "/" + day + "/" + year, "post": "'" + document.forms["post_message"].elements["message"].value + "'"})
+            messageboard.messages.push({"name": username, "date": month + "/" + day + "/" + year, "post": "'" + document.forms["post_message"].elements["message"].value + "'"})
             loadMessages();
         }
     }
