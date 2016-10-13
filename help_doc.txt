@@ -18,4 +18,4 @@ In index.html, add this tag where indcated (between line 51 and line 69):
 
 To modify event info:
 In script.js, find 'function loadInfo()' @ line 78.  Modify the text between the <h3></h3> tags (starting @ line 85), or add additional <h3></h3> tags, direclty above or below the existing tags.  <br> after each will make space between the lines.
-
+CHANGE ME
